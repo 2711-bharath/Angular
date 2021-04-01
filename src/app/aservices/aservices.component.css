@@ -1,0 +1,14 @@
+form {
+    display: table;
+    margin: 0 auto;
+}
+
+.flex-group {
+    margin: 30px;
+    display: flex;
+}
+
+.flex-group .flex {
+    width: 350px;
+    flex-grow: 4;
+}

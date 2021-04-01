@@ -1,0 +1,25 @@
+<h1>Angular Dependecy Injections</h1>
+<br>
+<div class="row container">
+    <div class="col-4">
+        <button type="button" name="button" (click)="getInfoFromServiceClass1()">Employee1</button>
+        <ul class="list-group">
+            <li *ngFor="let info of infoReceived1" class="list-group-item">{{info}}</li>
+        </ul>
+    </div>
+    <pre></pre>
+    <pre></pre>
+    <div class="col-4">
+        <button type="button" name="button" (click)="getInfoFromServiceClass2()">Employee2</button>
+        <ul class="list-group">
+            <li *ngFor="let info of infoReceived2" class="list-group-item">{{info}}</li>
+        </ul>
+    </div>
+    <pre></pre>
+    <div class="col-4">
+        <button type="button" name="button" (click)="getInfoFromServiceClass3()">Employee3</button>
+        <ul class="list-group">
+            <li *ngFor="let info of infoReceived3" class="list-group-item">{{info}}</li>
+        </ul>
+    </div>
+</div>

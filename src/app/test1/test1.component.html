@@ -1,0 +1,31 @@
+<h3>Learning Angular Components</h3>
+
+<p>Call Function in angular</p>
+<button (click)="getName('Bharath')">Click Me</button>
+
+<p>Important Events in Angular</p>
+<div class="row">
+    <div class="col-6">
+
+        <button (click)="myEvent('this is click event')">Click Me</button>
+        <br> <br>
+        <span> Keyup Event </span> <input type="text" (keyup)="myEvent('Key Up event')" />
+        <br> <br>
+        <label for="name">Enter your Name : </label>&nbsp;
+        <input type="text" #box (keyup)="myEvent1(box)">
+        <span> {{name}}</span>
+        <br><br>
+        <span> Blur Event </span> <input type="text" (blur)="myEvent('Blur Event')">
+    </div>
+    <div class="col-6">
+
+        <div class="demo" (mouseover)="myEvent('Mouseover')">
+            <p>Mouseover Event</p>
+        </div>
+        <br>
+
+        <div class="demo" (mouseleave)="myEvent('Mouseleave')">
+            <p>Mouseleave Event</p>
+        </div>
+    </div>
+</div>

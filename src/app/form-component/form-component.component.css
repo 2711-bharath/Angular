@@ -1,0 +1,24 @@
+h2 {
+    text-align: center;
+}
+
+input {
+    width: 100%;
+    padding: 10px 5px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: none;
+    border-bottom: 2px solid #0466f8;
+}
+
+.btn {
+    width: 100%;
+    margin: 0 auto;
+    background-color: #0466f8;
+    border: 2px;
+    border-radius: 10px;
+    color: white;
+    padding: 16px 32px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
