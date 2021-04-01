@@ -4,11 +4,18 @@ form {
 }
 
 .flex-group {
-    margin: 30px;
     display: flex;
+    padding: 10px;
+    padding-right: 5px;
 }
 
 .flex-group .flex {
+    margin-left: 50px;
     width: 350px;
     flex-grow: 4;
+}
+
+h2,
+p {
+    text-align: center;
 }

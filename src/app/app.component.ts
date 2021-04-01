@@ -12,36 +12,11 @@ export class Repos {
   styleUrls: ['./app.component.css']
 })
 
-export class AppComponent implements OnInit {
- 
-  userName: string = "2711-bharath"
-  baseURL: string = "https://api.github.com/";
-  repos: Repos[];
+export class AppComponent {
  
   
-  constructor(private http: HttpClient) {
-  }
- 
-  ngOnInit() {
-    this.getRepos()
+  constructor() {
   }
  
  
-  public getRepos() {
- 
-    return this.http.get<Repos[]>(this.baseURL + 'users/' + this.userName + '/repos')
-      .subscribe(
-        (response) => {                           //Next callback
-          console.log('response received')
-          console.log(response);
-          this.repos = response; 
-        },
-        (error) => {                              //Error callback
-          console.error('Request failed with error')
-          alert(error);
-        },
-        () => {                                   //Complete callback
-          console.log('Request completed')
-        })
-  }
 }
