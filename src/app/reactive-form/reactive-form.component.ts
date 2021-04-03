@@ -17,13 +17,17 @@ export class ReactiveFormComponent implements OnInit {
     });
   }
   */
+  submitted = false;
   constructor(private formBuilder:FormBuilder) { 
     this.checkoutForm = formBuilder.group({
+      'firstName': ['',Validators.required],
+      'lastName': ['',Validators.required],
       'email': ['',Validators.required], 
       'quantity': ['',Validators.required], 
       'terms': ['',Validators.requiredTrue],    
     });
   }
+
   showData(){
     console.log(this.checkoutForm.value)
   }

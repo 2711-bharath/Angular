@@ -12,6 +12,7 @@ import { Test1Component } from './test1/test1.component';
 import { HttpClientComponent } from './http-client/http-client.component';
 
 const routes: Routes = [
+  {path:'angular', component: HomeComponent},
   {path:'login', component: LoginComponent},
   {path:'home',component:HomeComponent},
   {path:'services',component:AservicesComponent},
