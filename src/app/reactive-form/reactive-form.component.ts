@@ -17,6 +17,8 @@ export class ReactiveFormComponent implements OnInit {
     });
   }
   */
+  myfrm:any
+
   submitted = false;
   constructor(private formBuilder:FormBuilder) { 
     this.checkoutForm = formBuilder.group({
@@ -27,9 +29,13 @@ export class ReactiveFormComponent implements OnInit {
       'terms': ['',Validators.requiredTrue],    
     });
   }
-
+  submitVal:boolean=false;
   showData(){
     console.log(this.checkoutForm.value)
+    this.myfrm = this.checkoutForm.value;
+    this.checkoutForm.reset()
+    this.submitVal = true
+
   }
   ngOnInit(): void {
   }
